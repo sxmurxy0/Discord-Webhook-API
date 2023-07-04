@@ -100,7 +100,7 @@ public final class DiscordEmbed {
 		
 		public Builder addFields(FieldEmbed... fields) {
 			if (embed.fields == null)
-				embed.fields = new ArrayList<>(4);
+				embed.fields = new ArrayList<>(6);
 			
 			Collections.addAll(embed.fields, fields);
 			return this;

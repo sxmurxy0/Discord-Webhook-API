@@ -10,7 +10,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
-import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.HttpClients;
 
 import com.google.gson.Gson;
@@ -38,7 +37,7 @@ public final class WebhookAgent {
 			HttpEntity entity = null;
 			if (message.files != null) {
 				MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
-				entityBuilder.addPart("payload_json", new StringBody(GSON.toJson(message), ContentType.APPLICATION_JSON));
+				entityBuilder.addTextBody("payload_json", GSON.toJson(message), ContentType.APPLICATION_JSON);
 				for (int i = 0; i < message.files.size(); i++) {
 					File file = message.files.get(i);
 					if (file.exists() && file.isFile())
