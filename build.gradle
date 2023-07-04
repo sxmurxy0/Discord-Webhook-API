@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+version = '1.0'
+archivesBaseName 'discord-webhook-api'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'org.apache.httpcomponents:httpmime:4.5.14'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
