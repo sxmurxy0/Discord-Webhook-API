@@ -1,7 +1,7 @@
 <h1 align='center'>Discord-Webhook-API:stars:</h1> </br>
 
 Java API tool for easy work with discord webhooks. Send files, embeds or just text messages. </br>
-More information and examples are [**here**](https://birdie0.github.io/discord-webhooks-guide/index.html). You can also use discord text formatting.
+More information and examples are [**here**](https://birdie0.github.io/discord-webhooks-guide/index.html). You can also use discord text formatting in your messages.
 
 ## Example message
 <img width="264" alt="Снимок экрана 2023-07-05 004509" src="https://github.com/sxmurxy2007/Discord-Webhook-API/assets/46312126/00e033ad-4787-4303-93cc-e9c07432a139">
